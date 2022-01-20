@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS | Items</title>
+    <title>POS | Orders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/css/all.css">
@@ -12,8 +12,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-
-            <a class="navbar-brand fw-bolder fs-2 color-blue" href="../index.html"><i class="fas fa-balance-scale-right navbar-brand color-blue fs-3 me-2"></i>POS System</a>
+            <a class="navbar-brand fw-bolder fs-2 color-blue" href="../index.html"><i class="fas fa-balance-scale-right color-blue fs-3 me-2"></i>POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,10 +22,10 @@
                         <a class="nav-link " aria-current="page" href="../index.html">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bolder" href="#">Items</a>
+                        <a class="nav-link " href="item.html">Items</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="customer.html">Customer</a>
+                        <a class="nav-link active fw-bolder" href="#">Customer</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,13 +42,12 @@
         </div>
     </nav>
 </header>
-<main  class="container position-relative">
-    <div>
+<main class="container position-relative">
+    <div >
         <div class="row ">
-            <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-box-open me-2 fs-4"></i>Item</div>
+            <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-user-edit me-2" ></i>Customer</div>
         </div>
     </div>
-
     <section>
         <div class="row">
             <div class="col-1 col-sm-2 col-lg-1">
@@ -59,38 +57,38 @@
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Name</a></li>
-                        <li><a class="dropdown-item" href="#">Code</a></li>
+                        <li><a class="dropdown-item" href="#">ID</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-4 col-sm-6 col-lg-4">
                 <form class="d-flex mt-5">
-                    <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit" data-bs-toggle="modal" data-bs-target="#searchItemModal">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Search Customer" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit" data-bs-toggle="modal" data-bs-target="#searchCustomerModal">Search</button>
 
-                    <div class="modal fade" id="searchItemModal" tabindex="-1" aria-labelledby="searchItemModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="searchCustomerModal" tabindex="-1" aria-labelledby="searchCustomerModalLabel" aria-hidden="true">
                         <div class="modal-dialog-centered modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-primary text-light">
-                                    <h5 class="modal-title " id="searchItemModalLabel">Item Details</h5>
+                                    <h5 class="modal-title " id="searchCustomerModalLabel">Customer Details</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
                                     <form>
                                         <div>
-                                            <label for="search-id" class="col-form-label">Item Code:</label>
+                                            <label for="search-id" class="col-form-label">Customer ID:</label>
                                             <input type="text" class="form-control" id="search-id">
                                         </div>
                                         <div >
-                                            <label for="search-name" class="col-form-label">Item Name:</label>
+                                            <label for="search-name" class="col-form-label">Customer Name:</label>
                                             <input type="text" class="form-control" id="search-name">
                                         </div>
                                         <div >
-                                            <label for="search-address" class="col-form-label">Item Price:</label>
+                                            <label for="search-address" class="col-form-label">Customer Address:</label>
                                             <input type="text" class="form-control" id="search-address">
                                         </div>
                                         <div >
-                                            <label for="search-salary" class="col-form-label">Item Quantity:</label>
+                                            <label for="search-salary" class="col-form-label">Customer salary:</label>
                                             <input type="text" class="form-control" id="search-salary">
                                         </div>
                                     </form>
@@ -106,32 +104,32 @@
                 </form>
             </div>
             <div class="col-4 ">
-                <button type="button" class="btn btn-success mt-5 position-absolute end-0 me-3" data-bs-toggle="modal" data-bs-target="#addItemModal">+Add Item</button>
+                <button type="button" class="btn btn-success mt-5 position-absolute end-0 me-3" data-bs-toggle="modal" data-bs-target="#addCustomerModal">+Add Customer</button>
 
-                <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
+                <div class="modal fade" id="addCustomerModal" tabindex="-1" aria-labelledby="addCustomerModalLabel" aria-hidden="true">
                     <div class="modal-dialog-centered modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-primary text-light">
-                                <h5 class="modal-title " id="addItemModalLabel">Add New Item</h5>
+                                <h5 class="modal-title " id="addCustomerModalLabel">Add New Customer</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
                                     <div>
-                                        <label for="item-id" class="col-form-label">Item Code:</label>
-                                        <input type="text" class="form-control" id="item-id">
+                                        <label for="customer-id" class="col-form-label">Customer ID:</label>
+                                        <input type="text" class="form-control" id="customer-id">
                                     </div>
                                     <div >
-                                        <label for="item-name" class="col-form-label">Item Name:</label>
-                                        <input type="text" class="form-control" id="item-name">
+                                        <label for="customer-name" class="col-form-label">Customer Name:</label>
+                                        <input type="text" class="form-control" id="customer-name">
                                     </div>
                                     <div >
-                                        <label for="item-address" class="col-form-label">Item Price:</label>
-                                        <input type="text" class="form-control" id="item-address">
+                                        <label for="customer-address" class="col-form-label">Customer Address:</label>
+                                        <input type="text" class="form-control" id="customer-address">
                                     </div>
                                     <div >
-                                        <label for="item-salary" class="col-form-label">Item Quantity:</label>
-                                        <input type="text" class="form-control" id="item-salary">
+                                        <label for="customer-salary" class="col-form-label">Customer salary:</label>
+                                        <input type="text" class="form-control" id="customer-salary">
                                     </div>
                                 </form>
                             </div>
@@ -144,52 +142,53 @@
                 </div>
             </div>
         </div>
+
         <hr class="mt-5">
         <div>
             <div class="row ">
-                <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-boxes me-2" ></i>All Items</div>
+                <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-users me-2"></i>All Customers</div>
             </div>
         </div>
         <div class=" mt-5 table-wrapper-scroll-y my-custom-scrollbar" >
             <table class="table table-hover table-bordered table-striped">
                 <thead class="bg-primary text-light">
                 <tr>
-                    <th scope="col">Item Code</th>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Unit Price(Rs)</th>
+                    <th scope="col">Customer ID</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Salary(Rs)</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Oil</td>
-                    <td>10</td>
-                    <td>100</td>
+                    <td>Ruwan</td>
+                    <td>Galle</td>
+                    <td>25000</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Rice</td>
-                    <td>50</td>
-                    <td>120</td>
+                    <td>Dasun</td>
+                    <td>Colombo</td>
+                    <td>10000</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Soap</td>
-                    <td>100</td>
-                    <td>50</td>
+                    <td>Pasindu</td>
+                    <td>Panadura</td>
+                    <td>50000</td>
                 </tr>
                 <tr>
                     <th scope="row">4</th>
-                    <td>Sugar</td>
-                    <td>76</td>
-                    <td>150</td>
+                    <td>Lakshan</td>
+                    <td>Kottawa</td>
+                    <td>75000</td>
                 </tr>
                 <tr>
                     <th scope="row">5</th>
-                    <td>Biscuit</td>
-                    <td>100</td>
-                    <td>75</td>
+                    <td>Ravindu</td>
+                    <td>Galle</td>
+                    <td>36000</td>
                 </tr>
                 </tbody>
             </table>
