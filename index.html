@@ -13,8 +13,10 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
 
-            <a class="navbar-brand fw-bolder fs-2 color-blue" href="index.html"> <i class="fas fa-balance-scale-right color-blue fs-3 me-2"></i>POS System</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bolder fs-2 color-blue" href="index.html"> <i
+                    class="fas fa-balance-scale-right color-blue fs-3 me-2"></i>POS System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,7 +31,8 @@
                         <a class="nav-link" href="pages/customer.html">Customer</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
                             Others
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -43,12 +46,176 @@
         </div>
     </nav>
 </header>
-<main>
-    <div class="container">
+<main class="container-md position-relative">
+    <div>
         <div class="row ">
-            <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-cart-plus me-2"></i>Orders</div>
+            <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-cart-plus me-2"></i>Orders
+            </div>
         </div>
     </div>
+    <div class="px-0 mt-4 ">
+        <div class="row gx-3 ">
+            <div class="col-xl col-lg-5 col-sm-6">
+                <div class="p-3 border bg-primary text-light fw-bolder ">Invoice Details</div>
+
+                <div class="px-3 mt-4 p-3 border mb-lg-0 mb-sm-4">
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="mb-lg-4 mb-sm-3">
+                                <label for="orderId" class="form-label">Order ID:</label>
+                                <input type="text" class="form-control" id="orderId" placeholder="O001">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-lg-4 mb-sm-3">
+                                <label for="OrderDate" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="OrderDate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="mb-lg-4 mb-sm-3">
+                                <label for="CustomerId" class="form-label">Customer ID</label>
+                                <input type="text" class="form-control" id="CustomerId" placeholder="C001">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-lg-4 mb-sm-3">
+                                <label for="customerName" class="form-label">Customer</label>
+                                <input type="text" class="form-control" id="customerName" placeholder="Kamal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="mb-lg-4 mb-sm-3">
+                            <label for="salary" class="form-label">Salary</label>
+                            <input type="text" class="form-control" id="salary" placeholder="0000.00">
+                        </div>
+                        <div class="mb-lg-4 mb-md-5">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Galle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-sm-6">
+                <div class="p-3 border bg-primary text-light fw-bolder">Item Details</div>
+
+                <div class="px-3 mt-4 p-3 border mb-lg-0 mb-sm-4">
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="mb-4">
+                                <label for="itemId" class="form-label">Item ID:</label>
+                                <input type="text" class="form-control" id="itemId" placeholder="P001">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-4">
+                                <label for="item" class="form-label">Item</label>
+                                <input type="text" class="form-control" id="item" placeholder="Soap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col">
+                            <div class="mb-4">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="price" placeholder="0000.00">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-5">
+                                <label for="qtyOnHand" class="form-label">QyOnHand</label>
+                                <input type="text" class="form-control" id="qtyOnHand" placeholder="10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-lg-2 mb-md-2 mb-sm-5">
+                            <label for="orderQty" class="form-label">Order Quantity</label>
+                            <input type="text" class="form-control" id="orderQty" placeholder="0000.00">
+                        </div>
+                        <div class="mt-5 d-grid gap-2 col-6 mx-auto">
+                            <button type="button" class="btn btn-primary">Add Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border bg-primary text-light fw-bolder">Payment Details</div>
+
+                <div class="px-3 mt-4 p-3 border">
+                    <div class="mb-1 row d-flex justify-content-center gx-5 ">
+                        <label for="total" class="col-xl-4 col-lg-5 col-md-2 col-sm-3 col-form-label fs-4">Total(RS)</label>
+                        <div class="col-xl-5 col-lg-7 col-md-3 col-sm-4 fs-4">
+                            <input type="text" readonly class="form-control-plaintext" id="total" value="00000.00">
+                        </div>
+                    </div>
+                    <div class="mb-1 row d-flex justify-content-center gx-5">
+                        <label for="subTotal" class="col-xl-4 col-lg-5 col-md-2 col-sm-3 col-form-label fs-4">Sub Total(RS)</label>
+                        <div class="col-xl-5 col-lg-7 col-md-3 col-sm-4 fs-4">
+                            <input type="text" readonly class="form-control-plaintext" id="subTotal" value="00000.00">
+                        </div>
+                    </div>
+                    <div class="row gx-3 mt-4">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cash" class="form-label">Cash</label>
+                                <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="discount" class="form-label">Discount</label>
+                                <input type="text" class="form-control" id="discount" placeholder="10">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="balance" class="form-label">Balance</label>
+                            <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                        </div>
+                        <div class="mt-1 d-grid gap-2 col-6 mx-auto ">
+                            <button type="button" class="btn btn-success">Purchase</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="mt-4 ">
+    <div class="mb-4 mt-4 table-wrapper-scroll-y my-custom-scrollbar " >
+        <table class="table table-hover table-bordered table-striped">
+            <thead class="bg-primary text-light">
+            <tr>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total(Rs)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">P001</th>
+                <td>Soap</td>
+                <td>150</td>
+                <td>2</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <th scope="row">P002</th>
+                <td>Rice</td>
+                <td>300</td>
+                <td>4</td>
+                <td>1200</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
 </main>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
