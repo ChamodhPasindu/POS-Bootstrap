@@ -45,20 +45,20 @@
 
     <section>
         <div class="row">
-            <div class="col-xl-2 col-sm-3 col-lg-2">
-                <select class="form-select form-select-ls  mt-5" aria-label=".form-select-lg example">
+            <div class="col-5 col-xl-2 col-sm-3 col-md-2 col-lg-2">
+                <select class="form-select form-select-ls  mt-4" aria-label=".form-select-lg example">
                     <option selected>ID</option>
                     <option value="1">Code</option>
                 </select>
             </div>
-            <div class="col-xl col-sm-6 col-lg-4">
-                <form class="d-flex mt-5">
+            <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
+                <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
                     <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
-            <div class="col-xl col-lg-4 col-sm-3 ">
-                <button type="button" class="btn btn-success mt-5 position-absolute end-0 me-3" data-bs-toggle="modal"
+            <div class="col-xl col-lg col-sm-12 col-md-4 d-grid justify-content-md-end ">
+                <button type="button" class="btn btn-success mt-4 d-grid  col-6 col-md-12 col-sm-6 mx-auto" data-bs-toggle="modal"
                         data-bs-target="#addItemModal">+Add Item</button>
 
                 <div class="modal fade" id="addItemModal" tabindex="-1" aria-labelledby="addItemModalLabel" aria-hidden="true">
@@ -98,30 +98,30 @@
             </div>
         </div>
 
-        <div class="p-3 border bg-primary text-light fw-bolder mt-5">Item Details</div>
+        <div class="p-3 border bg-primary text-light fw-bolder mt-4">Item Details</div>
 
-        <div class="px-3 mt-5 p-3 border mb-lg-0 mb-sm-4 mb-4">
+        <div class="px-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4">
             <div class="row gx-3">
-                <div class="col">
+                <div class="col-5 col-sm-5 col-lg">
                     <div class="mb-4">
                         <label for="itemId" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="itemId" placeholder="C001">
+                        <input type="text" class="form-control" id="itemId" placeholder="P001">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-7 col-sm-7 col-lg">
                     <div class="mb-4">
                         <label for="itemName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="itemName" placeholder="Dasun">
+                        <input type="text" class="form-control" id="itemName" placeholder="Saop">
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col col-lg">
                     <div class="mb-2">
                         <label for="qtyOnHand" class="form-label">Quantity</label>
                         <input type="text" class="form-control" id="qtyOnHand" placeholder="00">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-lg">
                     <div class="mb-2">
                         <label for="price" class="form-label">Unit Price</label>
                         <input type="text" class="form-control" id="price" placeholder="0000.00">
@@ -130,7 +130,7 @@
 
             </div>
             <div class="row">
-                <div class="mt-4 d-flex gap-2 col-2 mx-auto">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
                     <button type="button" class="btn btn-secondary">Clear</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                     <button type="button" class="btn btn-primary">Update</button>
@@ -144,7 +144,7 @@
                 <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-boxes me-2" ></i>All Items</div>
             </div>
         </div>
-        <div class="mb-5 mt-5 table-wrapper-scroll-y my-custom-scrollbar" >
+        <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar" >
             <table class="table table-hover table-bordered table-striped">
                 <thead class="bg-primary text-light">
                 <tr>
