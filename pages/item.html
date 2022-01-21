@@ -10,10 +10,10 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary  bg-gradient">
         <div class="container-fluid">
 
-            <a class="navbar-brand fw-bolder fs-2 color-blue" href="../index.html"><i class="fas fa-balance-scale-right navbar-brand color-blue fs-3 me-2"></i>POS System</a>
+            <a class="navbar-brand fw-bolder fs-2 " href="../index.html"><i class="fas fa-balance-scale-right navbar-brand  fs-3 me-2"></i>POS System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,7 +39,8 @@
 <main  class="container position-relative">
     <div>
         <div class="row ">
-            <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-box-open me-2 fs-4"></i>Item</div>
+            <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i class="fas fa-box-open me-2 fs-4"></i>
+                Item</div>
         </div>
     </div>
 
@@ -84,7 +85,7 @@
                                     </div>
                                     <div >
                                         <label for="item-salary" class="col-form-label">Item Quantity:</label>
-                                        <input type="text" class="form-control" id="item-salary">
+                                        <input type="number" class="form-control" id="item-salary">
                                     </div>
                                 </form>
                             </div>
@@ -98,39 +99,39 @@
             </div>
         </div>
 
-        <div class="p-3 border bg-primary text-light fw-bolder mt-4">Item Details</div>
+        <div class="p-3 rounded-3  bg-primary text-light fw-bolder mt-4">Item Details</div>
 
-        <div class="px-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4">
+        <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
             <div class="row gx-3">
                 <div class="col-5 col-sm-5 col-lg">
                     <div class="mb-4">
                         <label for="itemId" class="form-label">Item Code</label>
-                        <input type="text" class="form-control" id="itemId" placeholder="P001">
+                        <input type="text" class="form-control" id="itemId" placeholder="P001" disabled>
                     </div>
                 </div>
                 <div class="col-7 col-sm-7 col-lg">
                     <div class="mb-4">
                         <label for="itemName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="itemName" placeholder="Saop">
+                        <input type="text" class="form-control" id="itemName" placeholder="Saop" disabled>
                     </div>
                 </div>
 
                 <div class="col col-lg">
                     <div class="mb-2">
                         <label for="qtyOnHand" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="qtyOnHand" placeholder="00">
+                        <input type="number" class="form-control" id="qtyOnHand" placeholder="00" disabled>
                     </div>
                 </div>
                 <div class="col col-lg">
                     <div class="mb-2">
                         <label for="price" class="form-label">Unit Price</label>
-                        <input type="text" class="form-control" id="price" placeholder="0000.00">
+                        <input type="text" class="form-control" id="price" placeholder="0000.00" disabled>
                     </div>
                 </div>
 
             </div>
             <div class="row">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                <div class=" gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4 mt-lg-2">
                     <button type="button" class="btn btn-secondary">Clear</button>
                     <button type="button" class="btn btn-danger">Delete</button>
                     <button type="button" class="btn btn-primary">Update</button>
@@ -138,14 +139,14 @@
             </div>
         </div>
 
-        <hr class="mt-5" >
+        <hr class="mt-4" >
         <div>
             <div class="row ">
-                <div class="col rounded-3 fw-bolder color-gray fs-3 mt-4 shadow-lg"><i class="fas fa-boxes me-2" ></i>All Items</div>
+                <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-1 shadow-sm"><i class="fas fa-boxes me-2" ></i>All Items</div>
             </div>
         </div>
         <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar" >
-            <table class="table table-hover table-bordered table-striped">
+            <table class="table table-hover table-borderless table-striped">
                 <thead class="bg-primary text-light">
                 <tr>
                     <th scope="col">Item Code</th>

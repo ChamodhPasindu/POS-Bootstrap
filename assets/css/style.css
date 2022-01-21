@@ -1,23 +1,13 @@
-.color-white{
-    color: #ffffff !important;
-}
-.color-gray{
-    background-color: rgba(71, 71, 77, 0.51);
-    color: white;
-}
-.table-bd{
-    position: relative;
-    padding: 1rem;
-    margin: 1rem -0.75rem 0;
-    border: solid #dee2e6;
-    border-width: 1px 0 0;
-
-}
 .my-custom-scrollbar {
     position: relative;
-    height: 208px;
+    height: 201px;
     overflow: auto;
 }
 .table-wrapper-scroll-y {
     display: block;
+}
+table {
+    border-collapse: collapse;
+    border-radius: 0.3em;
+    overflow: hidden;
 }
